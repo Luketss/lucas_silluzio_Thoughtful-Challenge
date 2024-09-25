@@ -177,7 +177,6 @@ class SeleniumScraper:
             By.XPATH, "//div[@class='col']/div"
         )
         logger.info(len(div_elements))
-        input("...")
         for i in range(1, len(div_elements) - 1):
             element_title = div_elements[i].find_element(
                 By.XPATH, f"(//div[@class='h2'])[{i}]"
