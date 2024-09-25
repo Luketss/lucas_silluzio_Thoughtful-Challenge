@@ -1,0 +1,13 @@
+[
+  {
+      "payload": {
+        "url": "https://gothamist.com/",
+        "search_phrase": "soccer",
+        "category": [""],
+        "number_months": 1
+      },
+      "files": {
+          "orders.xlsx": "orders.xlsx"
+      }
+  }
+]
