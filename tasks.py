@@ -102,6 +102,9 @@ class SeleniumScraper:
                     )
                 )
             )
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView(true);", search_button
+            )
             search_button.click()
             search_field = wait.until(
                 EC.visibility_of_element_located(
