@@ -98,14 +98,11 @@ class SeleniumScraper:
                 EC.element_to_be_clickable(
                     (
                         By.XPATH,
-                        "//span[@class='pi pi-search p-button-icon']",
+                        "//button[@aria-label='Go to search page']",
                     )
                 )
             )
-            self.driver.execute_script(
-                "arguments[0].scrollIntoView(true);", search_button
-            )
-            search_button.click()
+            self.driver.execute_script("arguments[0].click();", search_button)
             search_field = wait.until(
                 EC.visibility_of_element_located(
                     (By.XPATH, "//input[@placeholder='search']")
